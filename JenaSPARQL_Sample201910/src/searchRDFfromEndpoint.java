@@ -32,6 +32,9 @@ public class searchRDFfromEndpoint {
 	     	//ResultSetFormatter.out(out, rs, query); 			//表形式で，ファイルに
 	     	ResultSetFormatter.outputAsCSV(System.out, rs);	//CSV形式で，標準出力に
 	     	//ResultSetFormatter.outputAsCSV(out, rs);			//CSV形式で，ファイルに
+		
+		qexec.close(); //クエリ実行の終了処理
+		
         } catch (Exception e) {
             e.printStackTrace();
         }
